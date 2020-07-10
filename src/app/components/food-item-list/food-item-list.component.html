@@ -1,0 +1,5 @@
+<app-food-item
+  *ngFor = "let food of foodItems"
+  [food] = "food"
+  (addItemToCart) = "addItemToCart($event)"
+></app-food-item>

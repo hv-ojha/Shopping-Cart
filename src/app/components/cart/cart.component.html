@@ -1,0 +1,12 @@
+<div class="center" *ngFor="let recipient of cartItems | keyvalue">
+    <h2>{{recipient.key.name}}</h2>
+    <h2>
+        <button mat-mini-fab color="accent" (click)="incrementQty(recipient)">
+            <mat-icon>add</mat-icon>
+        </button>
+        {{recipient.value}}
+        <button mat-mini-fab color="accent" (click)="decrementQty(recipient)">
+            <mat-icon>remove</mat-icon>
+        </button>
+    </h2>
+</div>
